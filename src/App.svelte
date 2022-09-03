@@ -1,5 +1,5 @@
 <script>
-    import Portfolio from "../src/components/Portfolio.svelte";
+    import Portfolio from "./components/Portfolio.svelte";
     import Navbar from "./components/Navbar.svelte";
     import Header from "./components/Header.svelte";
     import Contact from "./components/Contact.svelte";
