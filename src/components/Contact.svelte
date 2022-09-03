@@ -6,18 +6,8 @@
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12">
-                <h2
-                    data-aos="fade-right"
-                    data-aos-delay="400"
-                    data-aos-offset="200"
-                >
-                    Ingin menghubungi saya?
-                </h2>
-                <h3
-                    data-aos="fade-up"
-                    data-aos-delay="600"
-                    data-aos-offset="200"
-                >
+                <h2>Ingin menghubungi saya?</h2>
+                <h3>
                     Kirim beberapa baris pesan anda ke <a
                         href="mailto:msurya672@gmail.com">msurya672@gmail.com</a
                     > dan saya akan segera menghubungi anda kembali.
