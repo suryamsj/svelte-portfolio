@@ -18,10 +18,6 @@
             ];
             var new_color = colors[Math.floor(Math.random() * colors.length)];
             figurePorto[i].style.background = new_color;
-
-            // AOS Animate
-            figure.dataset.aos = "zoom-in";
-            figure.dataset.aosDelay = i * 100;
         });
     });
 </script>
