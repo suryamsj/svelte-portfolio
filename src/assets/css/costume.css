@@ -1,0 +1,452 @@
+/*
+CSS yang berpengaruh di desktop
+dan mobile dimulai dari sini
+sampai akhir
+*/
+
+/* Utility */
+body {
+    background: #22262F;
+    cursor: url("../img/cursor_apple_body.png"), auto;
+}
+
+a,
+a:hover {
+    cursor: url("../img/unicorn_1f984.png"), auto;
+}
+
+body::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #E3F5FF;
+    border-radius: 20px;
+}
+
+.top-border {
+    height: 4px;
+    background: #27c4f5 -webkit-gradient(linear, left top, right top, from(#27c4f5), color-stop(#a307ba), color-stop(#fd8d32), color-stop(#70c050), to(#27c4f5));
+    background: #27c4f5 -webkit-linear-gradient(left, #27c4f5, #a307ba, #fd8d32, #70c050, #27c4f5);
+    background: #27c4f5 linear-gradient(to right, #27c4f5, #a307ba, #fd8d32, #70c050, #27c4f5);
+    background-size: 500%;
+    -webkit-animation: 4s linear infinite LoadingBarProgress;
+    animation: 4s linear infinite LoadingBarProgress;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 12;
+}
+
+@keyframes LoadingBarProgress {
+    0% {
+        background-position: 0% 0;
+    }
+
+    to {
+        background-position: 125% 0;
+    }
+}
+
+/* Navbar */
+nav {
+    margin-top: 1rem;
+}
+
+.bg-navbar {
+    background: #22262F;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+}
+
+.nav-link {
+    color: #c0c0c0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link:hover {
+    color: #2ABFFF;
+}
+
+nav button.navbar-toggler {
+    cursor: url("../img/unicorn_1f984.png"), auto !important;
+}
+
+nav button.navbar-toggler:active,
+nav button.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+nav i {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+/* Header */
+header {
+    color: #ffffff;
+}
+
+header h1 {
+    position: relative;
+    z-index: 5;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -.03em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+header h1 span {
+    font-family: 'Kalam', cursive;
+}
+
+header h1 a {
+    color: #2ABFFF;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    color: #2ABFFF;
+}
+
+header h2 {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+header h2 s {
+    color: #9ea4b2;
+    cursor: url("../img/cursor_tidak.png"), auto;
+}
+
+header h2 a {
+    color: #2ABFFF;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+header h2 a:hover {
+    color: #FF5DD9;
+}
+
+/* Section Portofolio */
+section.portofolio h1 {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+section.portofolio h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #2ABFFF;
+    bottom: 0;
+    position: absolute;
+}
+
+figure.snip1033 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    min-width: 220px;
+    max-width: 620px;
+    max-height: 530px;
+    width: 100%;
+    background: #D1CCEB;
+    border-radius: 10px;
+}
+
+figure.snip1033 img {
+    opacity: 1;
+    width: 100%;
+    position: relative;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.snip1033 .center {
+    border-radius: 5px;
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: #22262F;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    z-index: 1;
+}
+
+figure.snip1033 .center svg {
+    font-size: 38px;
+    padding: 6px;
+    color: #ffffff;
+    line-height: 52px;
+    opacity: 0.5;
+}
+
+figure.snip1033 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+figure.snip1033 figcaption>div {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 50%;
+    position: relative;
+}
+
+figure.snip1033 figcaption a {
+    opacity: 0.7;
+}
+
+figure.snip1033 figcaption a:hover {
+    opacity: 1;
+}
+
+figure.snip1033 figcaption h2 {
+    background-color: #222;
+    word-spacing: -0.1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1em;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
+    transition: opacity 0.45s, -webkit-transform 0.45s, -moz-transform 0.45s, -o-transform 0.45s, transform 0.45s;
+}
+
+figure.snip1033 figcaption .left h2 {
+    border-radius: 5px 0 0 5px;
+    top: 50%;
+    padding: 4px 35px 4px 10px;
+    right: 0;
+    -webkit-transform: translate(100%, 0px);
+    transform: translate(100%, 0px);
+}
+
+figure.snip1033 figcaption .right h2 {
+    border-radius: 0 5px 5px 0;
+    bottom: 50%;
+    padding: 4px 10px 4px 35px;
+    padding-left: 30px;
+    -webkit-transform: translate(-100%, 0px);
+    transform: translate(-100%, 0px);
+}
+
+figure.snip1033 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+figure.snip1033 .label {
+    background-color: #919BA7;
+    color: #ffffff;
+}
+
+figure.snip1033:hover img,
+figure.snip1033.hover img {
+    opacity: 0.5;
+}
+
+figure.snip1033:hover figcaption .left h2,
+figure.snip1033.hover figcaption .left h2 {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0px);
+    transform: translate(0%, 0px);
+}
+
+figure.snip1033:hover figcaption .right h2,
+figure.snip1033.hover figcaption .right h2 {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0px);
+    transform: translate(0%, 0px);
+}
+
+figure.snip1033:hover .center,
+figure.snip1033.hover .center {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+figure.snip1033:hover .center i,
+figure.snip1033.hover .center i {
+    -webkit-transform: translate(0%, -10px);
+    transform: translate(0%, -10px);
+}
+
+/* Section Kontak */
+section.kontak h1 {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+section.kontak h1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #2ABFFF;
+    bottom: 0;
+    position: absolute;
+}
+
+section.kontak h2 {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+
+section.kontak h3 {
+    color: #a3a3a3;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 2.3rem;
+}
+
+section.kontak a {
+    color: #2ABFFF;
+    font-weight: 600;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+section.kontak a:hover {
+    color: #FF5DD9;
+}
+
+/* Footer */
+footer {
+    color: #E3F5FF;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+}
+
+footer a.btn-sosmed {
+    font-size: 1.5rem;
+    color: #E3F5FF;
+    border-radius: 100%;
+    border: none;
+}
+
+footer a.btn-sosmed:hover {
+    color: #E3F5FF;
+    background: #2F323A;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+footer a.btn-kembali {
+    font-size: 1.5rem;
+    color: #E3F5FF;
+    border-radius: 100%;
+    background: #2F323A;
+    border: none;
+}
+
+footer a.btn-kembali:hover {
+    color: #E3F5FF;
+    background: #2F323A;
+}
+
+footer a.btn-sosmed:active,
+footer a.btn-sosmed:focus,
+footer a.btn-kembali:active,
+footer a.btn-kembali:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/*
+CSS yang berpengaruh di mobile
+dimulai dari sini sampai akhir
+*/
+
+/* Responsive  */
+@media (max-width: 767.98px) {
+
+    /* Header */
+    header {
+        color: #ffffff;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 2rem;
+    }
+
+    /* Section Kontak */
+    section.kontak h1 {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        margin-top: -1rem;
+        margin-bottom: 2rem;
+    }
+
+    section.kontak h3 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        margin: -4rem 0rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    /* Section Kontak */
+    section.kontak h3 {
+        font-size: 1.3rem;
+    }
+}
