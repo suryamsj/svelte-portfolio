@@ -48,7 +48,6 @@ Web portfolio yang dibuat menggunakan Svelte. Sebenarnya ini hanya berupa css,ht
 Teknologi yang digunakan untuk membangun svelte-portfolio:
 
 - [Svelte](https://svelte.dev/)
-- [AOS](https://michalsnik.github.io/aos/)
 - [Bootstrap 5](https://getbootstrap.com/)
 - [Uniicons](https://iconscout.com/unicons/explore/line)
 - [Google Fonts](https://fonts.google.com/)
