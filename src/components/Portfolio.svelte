@@ -9,7 +9,7 @@
     import LinkU from "../assets/img/project/linku.webp";
     import Botulis from "../assets/img/project/botulis.webp";
     import Nyumput from "../assets/img/project/nyumput.webp";
-    import Take from "../assets/img/project/Take.webp";
+    import Take from "../assets/img/project/take.webp";
     import Template from "../assets/img/project/teknoday-template.webp";
     import Teknoday from "../assets/img/project/teknoday.webp";
     import Aspirasi from "../assets/img/project/aspirasi.webp";
