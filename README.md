@@ -3,7 +3,7 @@
 
   &#xa0;
 
-  <a href="https://suryamsj.netlify.app/">Demo</a>
+  <a href="https://suryamsj-old.netlify.app/">Demo</a>
 </div>
 
 <h1 align="center">Svelte Portfolio</h1>
